@@ -139,7 +139,8 @@ function updateVersion(type, isBeta = false) {
     let versionCmd = `npm version ${type} -m "chore: release v%s"`;
     const result = execSilent(versionCmd);
     if (result) {
-      newVersion = result.trim();
+      // npm version 返回带 v 前缀的版本号，去掉 v
+      newVersion = result.trim().replace(/^v/, '');
       log(`📦 新版本: ${newVersion}`, 'green');
     } else {
       log('❌ 版本更新失败', 'red');
