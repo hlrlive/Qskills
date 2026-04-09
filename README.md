@@ -84,6 +84,8 @@ npx qskills skill envs
 
 ## 技能管理
 
+> **短命令**：`skill` 可缩写为 `s`，如 `qskills s add`、`qskills s list`
+
 ### 添加技能
 
 ```bash
@@ -159,6 +161,8 @@ npx qskills skill remove my-script --env claude
 ---
 
 ## 知识库管理
+
+> **短命令**：`knowledge` 可缩写为 `k`，如 `qskills k add`、`qskills k list`
 
 ### 添加知识条目
 

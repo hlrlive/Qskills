@@ -6,7 +6,9 @@ import { searchKnowledge } from './search.js';
 import type { AIEnvironment } from '../../types/index.js';
 
 export function initKnowledgeCommands(program: Command): void {
-  const knowledge = program.command('knowledge').description('Knowledge base management commands');
+  const knowledge = program.command('knowledge')
+    .alias('k')
+    .description('Knowledge base management commands');
 
   // knowledge add
   knowledge

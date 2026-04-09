@@ -8,7 +8,9 @@ import { installSkill } from './install.js';
 import type { AIEnvironment } from '../../types/index.js';
 
 export function initSkillCommands(program: Command): void {
-  const skill = program.command('skill').description('Skill management commands');
+  const skill = program.command('skill')
+    .alias('s')
+    .description('Skill management commands');
 
   // skill add
   skill
