@@ -1,0 +1,15 @@
+{
+  "id": "skill-code-review",
+  "name": "code-review",
+  "version": "1.0.0",
+  "description": "代码审查技能 - 帮助 AI 助手进行系统化代码审查",
+  "author": "hlrlive",
+  "tags": ["code-review", "quality", "security", "best-practices"],
+  "type": "folder",
+  "entry": "SKILL.md",
+  "files": ["SKILL.md"],
+  "source": "public",
+  "environment": "common",
+  "createdAt": "2026-04-09",
+  "updatedAt": "2026-04-09"
+}
